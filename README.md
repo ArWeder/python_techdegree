@@ -8,7 +8,7 @@ No. | Course
 --- | -------------
 0. | Installing Python
 1. | [Basics](1_basics)
-2. | Collections
+2. | [Collections](2_collections)
 3. | Object-Oriented
 4. | Write Better Python
 5. | Functional
