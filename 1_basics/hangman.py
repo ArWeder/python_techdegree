@@ -11,17 +11,17 @@ import random
 
 # make a list of words
 words = [
-#    'apple',
-#    'banana',
+    'apple',
+    'banana',
     'orange',
-#    'coconut',
-#    'strawberry',
+    'coconut',
+    'strawberry',
     'lime',
-#    'grapefruit',
+    'grapefruit',
     'lemon',
-#    'kumquat',
-#    'pineapple',
-#    'blueberry',
+    'kumquat',
+    'pineapple',
+    'blueberry',
     'melon'
 ]
 
@@ -69,9 +69,8 @@ while True:
         if guess in secret_word:
             good_guesses.append(guess)
             # print out win
-            print("Checking win: len(good_guesses = {})".format(len(good_guesses)))
-
-            if len(good_guesses) == len(list(secret_word)):
+            # use set to account for duplicate letters in words
+            if set(good_guesses) == set(secret_word):
                 print("You win! The word was {}".format(secret_word))
                 break
         else:
